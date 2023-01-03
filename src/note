@@ -1,0 +1,65 @@
+                              Angular -front end tecnology
+                                ------------------------
+              basic commands
+               =============
+1.creation an Angularproject   -  ng new project-name
+2.to run Angular project    -  ng serve
+3.component creation     -  ng g component-name
+4.service creation     -   ng g s service-name
+
+                  basic concept
+                  ============
+1.module-to import 3rd party library-root module-appmodule
+
+
+2.component-html,css,ts
+
+
+3.to set up path for component---app routing module file
+
+
+4.routing outlet selector
+
+
+5.angular service
+
+
+6.dependancy injection - inside the constructor
+
+   syntax: access specifier object-name:dependent-class-name
+
+
+7.asynchronus -rxjs - observable - subscribe()  
+
+
+8.Data Binding - sharing data inside the component 
+                                                                                        ts-component
+                                                                                              html-view
+8.1 one way binding(sharing data from one direction)
+
+    8.1.1 component to view
+           8.1.1.1 string interpolation - {{variable - name}}
+           8.1.1.2 property binding -[attribute]="property-name"
+    
+    8.1.2 view to component
+            8.1.2.1  event Binding - (event)="function-call"
+             8.1.2.1  event Binding Using $ervent - (event)="function-call($event)"  (keyup)
+             8.1.2.3 template reference variables, #variable name
+
+8.2 two way binding
+          8.2.1 ngModel   (template driven form)  - import formsmodel , [(ngModel)]="variable-name"    
+                                                   - ngSubmit - apply it in form tag ,(ngSubmit)="function call"  
+
+
+
+
+9. Angular directive - to manipulate DOM
+     9.1 component directive 
+     9.2 structural directive - add or remove any html element
+         9.2.1 *ngIf="condition"  (it is a structural directive) //(*addstrict)
+         9.2.2 *ngFor="let variable-nmae of array-name"
+                                        (syntax for(let i of array-name))
+10.ActivatedRoute
+        Provides access to information about a route associated with a component                                 
+11. router class - use navigateByUrl() to navigate one page to another using ts  
+12. pipe - to convert user input to another format                                    
